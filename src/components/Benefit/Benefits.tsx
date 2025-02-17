@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from 'react'
 
 export default function Benefits() {
@@ -22,7 +23,7 @@ export default function Benefits() {
           <div data-anim-wrap className="row y-gap-30 items-center">
             <div data-anim-child="img-right cover-light-1 delay-2" className="col-md-6">
               <div className="ratio ratio-1:1">
-                <img src="img/about/19/1.png" alt="image" className="img-ratio rounded-16" />
+                <Image width={575} height={300} src="/img/about/19/1.png" alt="image" className="img-ratio rounded-16" />
               </div>
             </div>
 
@@ -58,7 +59,7 @@ export default function Benefits() {
 
             <div data-anim-child="img-right cover-light-1 delay-2" className="col-md-6 offset-md-1">
               <div className="ratio ratio-1:1">
-                <img src="img/about/19/2.png" alt="image" className="img-ratio rounded-16" />
+                <Image width={600} height={500} src="/img/about/19/2.png" alt="image" className="img-ratio rounded-16" />
               </div>
             </div>
           </div>
@@ -70,7 +71,7 @@ export default function Benefits() {
           <div data-anim-wrap className="row y-gap-30 items-center">
             <div data-anim-child="img-right cover-light-1 delay-2" className="col-md-6">
               <div className="ratio ratio-1:1">
-                <img src="img/about/19/3.png" alt="image" className="img-ratio rounded-16" />
+                <Image width={600} height={500} src="/img/about/19/3.png" alt="image" className="img-ratio rounded-16" />
               </div>
             </div>
 

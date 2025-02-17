@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from 'react'
 
 export default function About() {
@@ -75,8 +76,8 @@ export default function About() {
             <div className="col-lg-6">
               <div data-anim-child="img-right cover-white delay-2">
                 <div className="imageGrid -type-3">
-                  <img src="img/about/3/2.png" alt="image" />
-                  <img src="img/about/3/1.png" alt="image" />
+                  <Image width={450} height={460} src="/img/about/3/2.png" alt="image" />
+                  <Image width={600} height={200} src="/img/about/3/1.png" alt="image" />
                 </div>
               </div>
             </div>

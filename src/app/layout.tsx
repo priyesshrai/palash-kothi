@@ -33,8 +33,8 @@ export default function RootLayout({
           {children}
           <Footer />
 
-          <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAAz77U5XQuEME6TpftaMdX0bBelQxXRlM"></script>
-          <script src="https://unpkg.com/@googlemaps/markerclusterer/dist/index.min.js"></script>
+          <Script strategy="afterInteractive" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAAz77U5XQuEME6TpftaMdX0bBelQxXRlM"></Script>
+          <Script strategy="afterInteractive" src="https://unpkg.com/@googlemaps/markerclusterer/dist/index.min.js"></Script>
           <Script strategy="afterInteractive" src="js/vendors.js" ></Script>
           <Script strategy="afterInteractive" src="js/main.js" ></Script>
         </main>
