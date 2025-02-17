@@ -1,16 +1,8 @@
+import Cursor from "@/components/CustomCursor/Cursor";
+import Footer from "@/components/Footer/Footer";
+import Header from "@/components/Header/Header";
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+import Script from "next/script";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -24,8 +16,28 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        {children}
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com/" />
+        <link rel="preconnect" href="https://fonts.gstatic.com/" crossOrigin='anonymous' />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&amp;family=Jost:wght@400;500;600;700&amp;display=swap"
+          rel="stylesheet"
+        />
+        <link rel="stylesheet" href="css/vendors.css" />
+        <link rel="stylesheet" href="css/main.css" />
+      </head>
+      <body>
+        <main>
+          <Cursor/>
+          <Header />
+          {children}
+          <Footer />
+
+          <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAAz77U5XQuEME6TpftaMdX0bBelQxXRlM"></script>
+          <script src="https://unpkg.com/@googlemaps/markerclusterer/dist/index.min.js"></script>
+          <Script strategy="afterInteractive" src="js/vendors.js" ></Script>
+          <Script strategy="afterInteractive" src="js/main.js" ></Script>
+        </main>
       </body>
     </html>
   );
