@@ -1,6 +1,8 @@
 import About from '@/components/AboutComponent/About'
 import Benefits from '@/components/Benefit/Benefits'
+import Contact from '@/components/Contact/Contact'
 import Experience from '@/components/Experience/Experience'
+import Gallery from '@/components/Gallery/Gallery'
 import Hero from '@/components/Hero/Hero'
 import Facilities from '@/components/HotelFacilities/Facilities'
 import Rooms from '@/components/Rooms/Rooms'
@@ -18,7 +20,9 @@ export default function page() {
     <Experience/>
     <Rooms/>
     <Benefits/>
-    <Testimonials/>
+    <Gallery/>
+    <Contact/>
+    {/* <Testimonials/> */}
     </>
   )
 }

@@ -22,9 +22,10 @@ const Hero = () => {
                   data-anim-child="slide-up delay-3"
                   className="hero__title text-center"
                 >
-                 Welcome to Palash Kothi
+                  Welcome to Palash Kothi
                 </h1>
-                <p data-anim-child="slide-up delay-4" className={styles.heroSubtitle}>Experience luxury like never before</p>
+                <p data-anim-child="slide-up delay-4" className={styles.heroSubtitle}>A Luxury Resort near Bandhavgarh, Where Comfort Meets Wilderness. </p>
+                {/* Experience luxury like never before */}
                 <div
                   data-anim-child="slide-up delay-4"
                   className="hero__filterButtonMobile"
@@ -48,7 +49,7 @@ const Hero = () => {
                         >
                           <div>
                             <span className="js-first-date"
-                              >Check In - Check Out</span>
+                            >Check In - Check Out</span>
                             <span className="js-last-date"></span>
                           </div>
                           <i className="icon-arrow-down ml-10"></i>
@@ -225,7 +226,7 @@ const Hero = () => {
                   <div className="swiper-wrapper">
                     <div className="swiper-slide">
                       <img
-                        src="img/hero/2/1.png"
+                        src="/img/hero/banner-01.jpg"
                         alt="image"
                         className="hero-slider__image rounded-16"
                       />
@@ -233,7 +234,7 @@ const Hero = () => {
 
                     <div className="swiper-slide">
                       <img
-                        src="img/hero/2/2.png"
+                        src="/img/hero/banner-02.jpg"
                         alt="image"
                         className="hero-slider__image rounded-16"
                       />
@@ -241,15 +242,7 @@ const Hero = () => {
 
                     <div className="swiper-slide">
                       <img
-                        src="img/hero/2/3.png"
-                        alt="image"
-                        className="hero-slider__image rounded-16"
-                      />
-                    </div>
-
-                    <div className="swiper-slide">
-                      <img
-                        src="img/hero/2/4.png"
+                        src="/img/hero/banner-03.jpg"
                         alt="image"
                         className="hero-slider__image rounded-16"
                       />

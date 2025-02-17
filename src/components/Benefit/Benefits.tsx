@@ -18,7 +18,7 @@ export default function Benefits() {
           </div>
         </div>
       </section>
-      <section className="layout-pt-lg" style={{paddingTop: '100px'}}>
+      <section className="layout-pt-lg" style={{ paddingTop: '100px' }}>
         <div className="container">
           <div data-anim-wrap className="row y-gap-30 items-center">
             <div data-anim-child="img-right cover-light-1 delay-2" className="col-md-6">
@@ -29,15 +29,22 @@ export default function Benefits() {
 
             <div className="col-lg-4 col-md-5 offset-md-1">
               <i data-anim-child="slide-up delay-5" className="d-block icon-restaurant text-30 mb-30"></i>
-              <h3 data-anim-child="slide-up delay-6" className="text-40 md:text-30 lh-065">Restaurant & Bar</h3>
-              <p data-anim-child="slide-up delay-7" className="text-17 lh-17 mt-30">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+              <h3 data-anim-child="slide-up delay-6" className="text-40 md:text-30 lh-1">Heading -  Step Into Nature’s Timeless Beauty</h3>
+              <p data-anim-child="slide-up delay-7" className="text-17 lh-17 mt-30">I wandered lonely as a cloud
+                That floats on high o'er vales and hills,
+                When all at once I saw a crowd,
+                A host, of golden daffodils;
+              </p>
 
-              <div data-anim-child="slide-up delay-8">
+              {/* <div data-anim-child="slide-up delay-8">
                 <div className="text-17 fw-500 mt-50 md:mt-30">Open Daily: 7:00 pm - 24:00</div>
               </div>
 
               <div data-anim-child="slide-up delay-8">
                 <button className="button -md -type-2 bg-accent-1 -white rounded-16 text-accent-2 mt-50 md:mt-30">DINING WITH US</button>
+              </div> */}
+              <div data-anim-child="slide-up delay-8">
+                <button className="button -md -type-2 -outline-black text-black rounded-16 mt-50 md:mt-30">discover more</button>
               </div>
             </div>
           </div>
@@ -50,7 +57,11 @@ export default function Benefits() {
             <div className="col-md-5">
               <i data-anim-child="slide-up delay-5" className="d-block icon-rocks text-30 mb-30"></i>
               <h3 data-anim-child="slide-up delay-6" className="text-40 md:text-30 lh-065">Spa & Wellness</h3>
-              <p data-anim-child="slide-up delay-7" className="text-17 lh-17 mt-30">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+              <p data-anim-child="slide-up delay-7" className="text-17 lh-17 mt-30">"Tyger, Tyger, burning bright,
+                In the forests of the night;
+                What immortal hand or eye
+                Could frame thy fearful symmetry?"
+              </p>
 
               <div data-anim-child="slide-up delay-8">
                 <button className="button -md -type-2 -outline-black text-black rounded-16 mt-50 md:mt-30">discover more</button>
@@ -78,7 +89,11 @@ export default function Benefits() {
             <div className="col-lg-4 col-md-5 offset-md-1">
               <i data-anim-child="slide-up delay-5" className="d-block icon-gym text-30 mb-30"></i>
               <h3 data-anim-child="slide-up delay-6" className="text-40 md:text-30 lh-065">Fitness Center</h3>
-              <p data-anim-child="slide-up delay-7" className="text-17 lh-17 mt-30">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+              <p data-anim-child="slide-up delay-7" className="text-17 lh-17 mt-30">"For oft, when on my couch I lie
+                In vacant or in pensive mood,
+                They flash upon that inward eye
+                Which is the bliss of solitude;"
+              </p>
 
               <div data-anim-child="slide-up delay-8">
                 <button className="button -md -type-2 -outline-black text-black rounded-16 mt-50 md:mt-30">discover more</button>

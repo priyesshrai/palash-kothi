@@ -5,21 +5,21 @@ export default function View() {
     <section className="layout-pt-lg">
       <div data-anim-wrap className="container">
         <div className="row justify-center text-center">
-          <div className="col-xl-8 col-lg-10">
+          <div className="col-xl-10 col-lg-12">
             <div data-split='lines' data-anim-child="split-lines delay-2">
               <div className="text-15 uppercase mb-30 sm:mb-10">
                 PALASH KOTHI RESORT
               </div>
               <h2 className="text-64 md:text-40 capitalize">
-              Unwind in Nature’s Lap with a  <br className="lg:d-none" />
-              Thrilling Jungle Safari
+                Palash Kothi, Bandhavgarh - A Peaceful Stay in the <br className="lg:d-none" />
+                Heart of Nature.
               </h2>
             </div>
 
             <div data-anim-child="slide-up delay-4" className="row justify-center">
-              <div className="col-lg-8">
+              <div className="col-lg-10">
                 <p className="mt-40 md:mt-20">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio doloremque, cum tenetur reprehenderit blanditiis animi. Illum reprehenderit omnis quasi? Facere quis molestiae consectetur recusandae praesentium?
+                  Nestled among jasmine beds and fragrant Rajnigandha flowers, Palash Kothi offers a peaceful retreat where nature and serenity come together. Named after the ‘Flame of the Forest’ tree (Palash), this grand dwelling reflects elegance and charm. The Palash tree, sacred in Indian culture, symbolizes divinity and blessings. At Palash Kothi, experience the magic of nature, tradition, and luxury in a serene, forest-inspired setting.
                 </p>
               </div>
             </div>
@@ -41,22 +41,22 @@ export default function View() {
         <div className="row x-gap-50 y-gap-30 pt-100 sm:pt-50">
           <div className="col-lg-4 col-sm-6">
             <div data-anim-child="img-right cover-light-1 delay-2" className="rounded-16">
-              <img src="img/about/8/1.png" alt="image" className="rounded-16 col-12" />
+              <img src="/img/about/view-01.jpg" alt="image" className="rounded-16 col-12" />
             </div>
-            <div data-anim-child="fade delay-5" className="text-17 mt-30">A Sanctuary For The Senses</div>
+            {/* <div data-anim-child="fade delay-5" className="text-17 mt-30">A Sanctuary For The Senses</div> */}
           </div>
           <div className="col-lg-4 col-sm-6">
             <div className="pt-100 md:pt-0">
               <div data-anim-child="img-right cover-light-1 delay-3" className="rounded-16">
-                <img src="img/about/8/2.png" alt="image" className="rounded-16 col-12" />
+                <img src="/img/about/view-02.jpg" alt="image" className="rounded-16 col-12" />
               </div>
             </div>
           </div>
           <div className="col-lg-4 col-sm-6">
             <div data-anim-child="img-right cover-light-1 delay-4" className="rounded-16">
-              <img src="img/about/8/3.png" alt="image" className="rounded-16 col-12" />
+              <img src="/img/about/view-03.jpg" alt="image" className="rounded-16 col-12" />
             </div>
-            <div data-anim-child="fade delay-5" className="text-17 mt-30">2023 Mountain Travelers Choice</div>
+            {/* <div data-anim-child="fade delay-5" className="text-17 mt-30">2023 Mountain Travelers Choice</div> */}
           </div>
         </div>
       </div>
