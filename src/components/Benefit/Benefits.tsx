@@ -29,9 +29,9 @@ export default function Benefits() {
 
             <div className="col-lg-4 col-md-5 offset-md-1">
               <i data-anim-child="slide-up delay-5" className="d-block icon-restaurant text-30 mb-30"></i>
-              <h3 data-anim-child="slide-up delay-6" className="text-40 md:text-30 lh-1">Heading -  Step Into Nature’s Timeless Beauty</h3>
+              <h3 data-anim-child="slide-up delay-6" className="text-40 md:text-30 lh-1">Heading -  Step Into Nature&apos;s Timeless Beauty</h3>
               <p data-anim-child="slide-up delay-7" className="text-17 lh-17 mt-30">I wandered lonely as a cloud
-                That floats on high o'er vales and hills,
+                That floats on high over vales and hills,
                 When all at once I saw a crowd,
                 A host, of golden daffodils;
               </p>
@@ -57,10 +57,10 @@ export default function Benefits() {
             <div className="col-md-5">
               <i data-anim-child="slide-up delay-5" className="d-block icon-rocks text-30 mb-30"></i>
               <h3 data-anim-child="slide-up delay-6" className="text-40 md:text-30 lh-065">Spa & Wellness</h3>
-              <p data-anim-child="slide-up delay-7" className="text-17 lh-17 mt-30">"Tyger, Tyger, burning bright,
+              <p data-anim-child="slide-up delay-7" className="text-17 lh-17 mt-30">&quot;Tyger, Tyger, burning bright,
                 In the forests of the night;
                 What immortal hand or eye
-                Could frame thy fearful symmetry?"
+                Could frame thy fearful symmetry?&quot;
               </p>
 
               <div data-anim-child="slide-up delay-8">
@@ -89,10 +89,10 @@ export default function Benefits() {
             <div className="col-lg-4 col-md-5 offset-md-1">
               <i data-anim-child="slide-up delay-5" className="d-block icon-gym text-30 mb-30"></i>
               <h3 data-anim-child="slide-up delay-6" className="text-40 md:text-30 lh-065">Fitness Center</h3>
-              <p data-anim-child="slide-up delay-7" className="text-17 lh-17 mt-30">"For oft, when on my couch I lie
+              <p data-anim-child="slide-up delay-7" className="text-17 lh-17 mt-30">&quot;For oft, when on my couch I lie
                 In vacant or in pensive mood,
                 They flash upon that inward eye
-                Which is the bliss of solitude;"
+                Which is the bliss of solitude;&quot;
               </p>
 
               <div data-anim-child="slide-up delay-8">
