@@ -75,8 +75,8 @@ export default function About() {
           <div className="col-lg-6">
             <div data-anim-child="img-right cover-white delay-2">
               <div className="imageGrid -type-3">
-                <img src="/img/about/about-inner.jpg" alt="image" />
-                <img src="/img/about/about-outer.jpg" alt="image" />
+                <img src="/img/about/about-outer-04.jpg" alt="image" width="375px" height="455px" />
+                <img src="/img/about/about-outer-02.jpg" alt="image" />
               </div>
             </div>
           </div>
