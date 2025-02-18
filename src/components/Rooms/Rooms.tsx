@@ -1,6 +1,59 @@
+'use client'
 import React from 'react'
 
 export default function Rooms() {
+    const roomData = [
+        {
+            id: 1,
+            image: "/img/cards/rooms/room-01.jpg",
+            price: "$499 / NIGHT",
+            title: "Luxury Suite",
+            guest: "2 GUEST",
+            bed: "1 BED",
+            bath: "1 BATH",
+            uri: ""
+        },
+        {
+            id: 2,
+            image: "/img/cards/rooms/room-02.jpg",
+            price: "$499 / NIGHT",
+            title: "Double Room",
+            guest: "2 GUEST",
+            bed: "1 BED",
+            bath: "1 BATH",
+            uri: ""
+        },
+        {
+            id: 3,
+            image: "/img/cards/rooms/room-03.jpg",
+            price: "$499 / NIGHT",
+            title: "Deluxe Suite",
+            guest: "2 GUEST",
+            bed: "1 BED",
+            bath: "1 BATH",
+            uri: ""
+        },
+        {
+            id: 4,
+            image: "/img/cards/rooms/room-04.jpg",
+            price: "$499 / NIGHT",
+            title: " Luxury Suite",
+            guest: "2 GUEST",
+            bed: "1 BED",
+            bath: "1 BATH",
+            uri: ""
+        },
+        {
+            id: 5,
+            image: "/img/cards/rooms/room-05.jpg",
+            price: "$499 / NIGHT",
+            title: "Double Room",
+            guest: "2 GUEST",
+            bed: "1 BED",
+            bath: "1 BATH",
+            uri: ""
+        },
+    ]
     return (
         <section className="layout-pt-lg">
             <div data-anim-wrap className="container">
@@ -30,443 +83,77 @@ export default function Rooms() {
                         data-nav-next="js-slider2-next"
                     >
                         <div className="swiper-wrapper">
-                            <div className="swiper-slide">
-                                <a
-                                    href="room-list-1.html"
-                                    className="roomCard -type-2 -hover-button-center"
-                                >
-                                    <div data-anim-child="img-right cover-white delay-2">
-                                        <div
-                                            className="roomCard__image ratio ratio-45:54 -hover-button-center__wrap"
+
+                            {
+                                roomData.map((room) => (
+                                    <div className="swiper-slide" key={room.id}>
+                                        <a
+                                            href={room.uri}
+                                            className="roomCard -type-2 -hover-button-center"
                                         >
-                                            <img
-                                                src="img/cards/rooms/2/1.png"
-                                                alt="image"
-                                                className="img-ratio rounded-16"
-                                            />
+                                            <div data-anim-child="img-right cover-white delay-2">
+                                                <div
+                                                    className="roomCard__image ratio ratio-45:54 -hover-button-center__wrap"
+                                                >
+                                                    <img
+                                                        src={room.image}
+                                                        alt="image"
+                                                        className="img-ratio rounded-16"
+                                                    />
 
-                                            <div
-                                                className="roomCard__price text-15 fw-500 bg-white text-accent-1"
-                                            >
-                                                $499 / NIGHT
-                                            </div>
+                                                    <div
+                                                        className="roomCard__price text-15 fw-500 bg-white text-accent-1"
+                                                    >
+                                                        {room.price}
+                                                    </div>
 
-                                            <div
-                                                className="-hover-button-center__button flex-center size-130 rounded-full bg-accent-1-50 blur-1 border-white-10"
-                                            >
-                                                <span className="text-15 fw-500 text-white"
-                                                >BOOK NOW</span>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div
-                                        data-anim-child="slide-up delay-3"
-                                        className="roomCard__content mt-30"
-                                    >
-                                        <div className="d-flex justify-between items-end">
-                                            <h3 className="roomCard__title lh-065 text-40 md:text-24">
-                                                Luxury Suite
-                                            </h3>
-                                        </div>
-
-                                        <div className="row x-gap-30 y-gap-10 pt-30">
-                                            <div className="col-auto">
-                                                <div className="d-flex items-center text-accent-1">
-                                                    <i className="icon-size text-20 mr-10"></i>
-                                                    30M2
+                                                    <div
+                                                        className="-hover-button-center__button flex-center size-130 rounded-full bg-accent-1-50 blur-1 border-white-10"
+                                                    >
+                                                        <span className="text-15 fw-500 text-white"
+                                                        >BOOK NOW</span>
+                                                    </div>
                                                 </div>
-                                            </div>
-
-                                            <div className="col-auto">
-                                                <div className="d-flex items-center text-accent-1">
-                                                    <i className="icon-guest text-20 mr-10"></i>
-                                                    2 GUEST
-                                                </div>
-                                            </div>
-
-                                            <div className="col-auto">
-                                                <div className="d-flex items-center text-accent-1">
-                                                    <i className="icon-bed-2 text-20 mr-10"></i>
-                                                    1 BED
-                                                </div>
-                                            </div>
-
-                                            <div className="col-auto">
-                                                <div className="d-flex items-center text-accent-1">
-                                                    <i className="icon-bath text-20 mr-10"></i>
-                                                    1 BATH
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-
-                            <div className="swiper-slide">
-                                <a
-                                    href="room-list-1.html"
-                                    className="roomCard -type-2 -hover-button-center"
-                                >
-                                    <div data-anim-child="img-right cover-white delay-4">
-                                        <div
-                                            className="roomCard__image ratio ratio-45:54 -hover-button-center__wrap"
-                                        >
-                                            <img
-                                                src="img/cards/rooms/2/2.png"
-                                                alt="image"
-                                                className="img-ratio rounded-16"
-                                            />
-
-                                            <div
-                                                className="roomCard__price text-15 fw-500 bg-white text-accent-1"
-                                            >
-                                                $499 / NIGHT
                                             </div>
 
                                             <div
-                                                className="-hover-button-center__button flex-center size-130 rounded-full bg-accent-1-50 blur-1 border-white-10"
+                                                data-anim-child="slide-up delay-3"
+                                                className="roomCard__content mt-30"
                                             >
-                                                <span className="text-15 fw-500 text-white"
-                                                >BOOK NOW</span>
+                                                <div className="d-flex justify-between items-end">
+                                                    <h3 className="roomCard__title lh-065 text-40 md:text-24">
+                                                        {room.title}
+                                                    </h3>
+                                                </div>
+
+                                                <div className="row x-gap-30 y-gap-10 pt-30">
+
+                                                    <div className="col-auto">
+                                                        <div className="d-flex items-center text-accent-1">
+                                                            <i className="icon-guest text-20 mr-10"></i>
+                                                            {room.guest}
+                                                        </div>
+                                                    </div>
+
+                                                    <div className="col-auto">
+                                                        <div className="d-flex items-center text-accent-1">
+                                                            <i className="icon-bed-2 text-20 mr-10"></i>
+                                                            {room.bed}
+                                                        </div>
+                                                    </div>
+
+                                                    <div className="col-auto">
+                                                        <div className="d-flex items-center text-accent-1">
+                                                            <i className="icon-bath text-20 mr-10"></i>
+                                                            {room.bath}
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
-                                        </div>
+                                        </a>
                                     </div>
-
-                                    <div
-                                        data-anim-child="slide-up delay-5"
-                                        className="roomCard__content mt-30"
-                                    >
-                                        <div className="d-flex justify-between items-end">
-                                            <h3 className="roomCard__title lh-065 text-40 md:text-24">
-                                                Double Room
-                                            </h3>
-                                        </div>
-
-                                        <div className="row x-gap-30 y-gap-10 pt-30">
-                                            <div className="col-auto">
-                                                <div className="d-flex items-center text-accent-1">
-                                                    <i className="icon-size text-20 mr-10"></i>
-                                                    30M2
-                                                </div>
-                                            </div>
-
-                                            <div className="col-auto">
-                                                <div className="d-flex items-center text-accent-1">
-                                                    <i className="icon-guest text-20 mr-10"></i>
-                                                    2 GUEST
-                                                </div>
-                                            </div>
-
-                                            <div className="col-auto">
-                                                <div className="d-flex items-center text-accent-1">
-                                                    <i className="icon-bed-2 text-20 mr-10"></i>
-                                                    1 BED
-                                                </div>
-                                            </div>
-
-                                            <div className="col-auto">
-                                                <div className="d-flex items-center text-accent-1">
-                                                    <i className="icon-bath text-20 mr-10"></i>
-                                                    1 BATH
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-
-                            <div className="swiper-slide">
-                                <a
-                                    href="room-list-1.html"
-                                    className="roomCard -type-2 -hover-button-center"
-                                >
-                                    <div data-anim-child="img-right cover-white delay-6">
-                                        <div
-                                            className="roomCard__image ratio ratio-45:54 -hover-button-center__wrap"
-                                        >
-                                            <img
-                                                src="img/cards/rooms/2/3.png"
-                                                alt="image"
-                                                className="img-ratio rounded-16"
-                                            />
-
-                                            <div
-                                                className="roomCard__price text-15 fw-500 bg-white text-accent-1"
-                                            >
-                                                $499 / NIGHT
-                                            </div>
-
-                                            <div
-                                                className="-hover-button-center__button flex-center size-130 rounded-full bg-accent-1-50 blur-1 border-white-10"
-                                            >
-                                                <span className="text-15 fw-500 text-white"
-                                                >BOOK NOW</span>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div
-                                        data-anim-child="slide-up delay-7"
-                                        className="roomCard__content mt-30"
-                                    >
-                                        <div className="d-flex justify-between items-end">
-                                            <h3 className="roomCard__title lh-065 text-40 md:text-24">
-                                                Deluxe Suite
-                                            </h3>
-                                        </div>
-
-                                        <div className="row x-gap-30 y-gap-10 pt-30">
-                                            <div className="col-auto">
-                                                <div className="d-flex items-center text-accent-1">
-                                                    <i className="icon-size text-20 mr-10"></i>
-                                                    30M2
-                                                </div>
-                                            </div>
-
-                                            <div className="col-auto">
-                                                <div className="d-flex items-center text-accent-1">
-                                                    <i className="icon-guest text-20 mr-10"></i>
-                                                    2 GUEST
-                                                </div>
-                                            </div>
-
-                                            <div className="col-auto">
-                                                <div className="d-flex items-center text-accent-1">
-                                                    <i className="icon-bed-2 text-20 mr-10"></i>
-                                                    1 BED
-                                                </div>
-                                            </div>
-
-                                            <div className="col-auto">
-                                                <div className="d-flex items-center text-accent-1">
-                                                    <i className="icon-bath text-20 mr-10"></i>
-                                                    1 BATH
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-
-                            <div className="swiper-slide">
-                                <a
-                                    href="room-list-1.html"
-                                    className="roomCard -type-2 -hover-button-center"
-                                >
-                                    <div data-anim-child="img-right cover-white delay-8">
-                                        <div
-                                            className="roomCard__image ratio ratio-45:54 -hover-button-center__wrap"
-                                        >
-                                            <img
-                                                src="img/cards/rooms/2/4.png"
-                                                alt="image"
-                                                className="img-ratio rounded-16"
-                                            />
-
-                                            <div
-                                                className="roomCard__price text-15 fw-500 bg-white text-accent-1"
-                                            >
-                                                $499 / NIGHT
-                                            </div>
-
-                                            <div
-                                                className="-hover-button-center__button flex-center size-130 rounded-full bg-accent-1-50 blur-1 border-white-10"
-                                            >
-                                                <span className="text-15 fw-500 text-white"
-                                                >BOOK NOW</span>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div
-                                        data-anim-child="slide-up delay-9"
-                                        className="roomCard__content mt-30"
-                                    >
-                                        <div className="d-flex justify-between items-end">
-                                            <h3 className="roomCard__title lh-065 text-40 md:text-24">
-                                                Luxury Suite
-                                            </h3>
-                                        </div>
-
-                                        <div className="row x-gap-30 y-gap-10 pt-30">
-                                            <div className="col-auto">
-                                                <div className="d-flex items-center text-accent-1">
-                                                    <i className="icon-size text-20 mr-10"></i>
-                                                    30M2
-                                                </div>
-                                            </div>
-
-                                            <div className="col-auto">
-                                                <div className="d-flex items-center text-accent-1">
-                                                    <i className="icon-guest text-20 mr-10"></i>
-                                                    2 GUEST
-                                                </div>
-                                            </div>
-
-                                            <div className="col-auto">
-                                                <div className="d-flex items-center text-accent-1">
-                                                    <i className="icon-bed-2 text-20 mr-10"></i>
-                                                    1 BED
-                                                </div>
-                                            </div>
-
-                                            <div className="col-auto">
-                                                <div className="d-flex items-center text-accent-1">
-                                                    <i className="icon-bath text-20 mr-10"></i>
-                                                    1 BATH
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-
-                            <div className="swiper-slide">
-                                <a
-                                    href="room-list-1.html"
-                                    className="roomCard -type-2 -hover-button-center"
-                                >
-                                    <div data-anim-child="img-right cover-white delay-10">
-                                        <div
-                                            className="roomCard__image ratio ratio-45:54 -hover-button-center__wrap"
-                                        >
-                                            <img
-                                                src="img/cards/rooms/2/5.png"
-                                                alt="image"
-                                                className="img-ratio rounded-16"
-                                            />
-
-                                            <div
-                                                className="roomCard__price text-15 fw-500 bg-white text-accent-1"
-                                            >
-                                                $499 / NIGHT
-                                            </div>
-
-                                            <div
-                                                className="-hover-button-center__button flex-center size-130 rounded-full bg-accent-1-50 blur-1 border-white-10"
-                                            >
-                                                <span className="text-15 fw-500 text-white"
-                                                >BOOK NOW</span >
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div
-                                        data-anim-child="slide-up delay-11"
-                                        className="roomCard__content mt-30"
-                                    >
-                                        <div className="d-flex justify-between items-end">
-                                            <h3 className="roomCard__title lh-065 text-40 md:text-24">
-                                                Double Room
-                                            </h3>
-                                        </div>
-
-                                        <div className="row x-gap-30 y-gap-10 pt-30">
-                                            <div className="col-auto">
-                                                <div className="d-flex items-center text-accent-1">
-                                                    <i className="icon-size text-20 mr-10"></i>
-                                                    30M2
-                                                </div>
-                                            </div>
-
-                                            <div className="col-auto">
-                                                <div className="d-flex items-center text-accent-1">
-                                                    <i className="icon-guest text-20 mr-10"></i>
-                                                    2 GUEST
-                                                </div>
-                                            </div>
-
-                                            <div className="col-auto">
-                                                <div className="d-flex items-center text-accent-1">
-                                                    <i className="icon-bed-2 text-20 mr-10"></i>
-                                                    1 BED
-                                                </div>
-                                            </div>
-
-                                            <div className="col-auto">
-                                                <div className="d-flex items-center text-accent-1">
-                                                    <i className="icon-bath text-20 mr-10"></i>
-                                                    1 BATH
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-
-                            <div className="swiper-slide">
-                                <a
-                                    href="room-list-1.html"
-                                    className="roomCard -type-2 -hover-button-center"
-                                >
-                                    <div data-anim-child="img-right cover-white delay-12">
-                                        <div
-                                            className="roomCard__image ratio ratio-45:54 -hover-button-center__wrap"
-                                        >
-                                            <img
-                                                src="img/cards/rooms/2/6.png"
-                                                alt="image"
-                                                className="img-ratio rounded-16"
-                                            />
-
-                                            <div
-                                                className="roomCard__price text-15 fw-500 bg-white text-accent-1"
-                                            >
-                                                $499 / NIGHT
-                                            </div>
-
-                                            <div
-                                                className="-hover-button-center__button flex-center size-130 rounded-full bg-accent-1-50 blur-1 border-white-10"
-                                            >
-                                                <span className="text-15 fw-500 text-white"
-                                                >BOOK NOW</span>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div
-                                        data-anim-child="slide-up delay-13"
-                                        className="roomCard__content mt-30"
-                                    >
-                                        <div className="d-flex justify-between items-end">
-                                            <h3 className="roomCard__title lh-065 text-40 md:text-24">
-                                                Deluxe Suite
-                                            </h3>
-                                        </div>
-
-                                        <div className="row x-gap-30 y-gap-10 pt-30">
-                                            <div className="col-auto">
-                                                <div className="d-flex items-center text-accent-1">
-                                                    <i className="icon-size text-20 mr-10"></i>
-                                                    30M2
-                                                </div>
-                                            </div>
-
-                                            <div className="col-auto">
-                                                <div className="d-flex items-center text-accent-1">
-                                                    <i className="icon-guest text-20 mr-10"></i>
-                                                    2 GUEST
-                                                </div>
-                                            </div>
-
-                                            <div className="col-auto">
-                                                <div className="d-flex items-center text-accent-1">
-                                                    <i className="icon-bed-2 text-20 mr-10"></i>
-                                                    1 BED
-                                                </div>
-                                            </div>
-
-                                            <div className="col-auto">
-                                                <div className="d-flex items-center text-accent-1">
-                                                    <i className="icon-bath text-20 mr-10"></i>
-                                                    1 BATH
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
+                                ))
+                            }
                         </div>
                     </div>
 
