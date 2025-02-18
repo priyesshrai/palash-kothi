@@ -23,6 +23,7 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&amp;family=Jost:wght@400;500;600;700&amp;display=swap"
           rel="stylesheet"
         />
+        <link rel="shortcut icon" href="/img/logo/palash_kothi.png" type="image/x-icon" />
         <link rel="stylesheet" href="css/vendors.css" />
         <link rel="stylesheet" href="css/main.css" />
       </head>
