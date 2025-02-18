@@ -8,27 +8,49 @@ export default function Gallery() {
   const images = [
     {
       id: 1,
-      image: "/img/cards/rooms/room-01.jpg",
+      image: "/img/gallery/gallery-01.jpg",
     },
     {
       id: 2,
-      image: "/img/cards/rooms/room-02.jpg",
+      image: "/img/gallery/gallery-02.jpg",
     },
     {
       id: 3,
-      image: "/img/cards/rooms/room-03.jpg",
+      image: "/img/gallery/gallery-03.jpg",
     },
     {
       id: 4,
-      image: "/img/cards/rooms/room-04.jpg",
+      image: "/img/gallery/gallery-06.jpg",
     },
     {
       id: 5,
-      image: "/img/cards/rooms/room-05.jpg",
+      image: "/img/gallery/gallery-07.jpg",
     },
+    {
+      id: 6,
+      image: "/img/gallery/gallery-08.jpg",
+    },
+    {
+      id: 7,
+      image: "/img/gallery/gallery-09.jpg",
+    },
+    {
+      id: 8,
+      image: "/img/gallery/gallery-10.jpg",
+    },
+    {
+      id: 9,
+      image: "/img/gallery/gallery-11.jpg",
+    },
+    {
+      id: 10,
+      image: "/img/gallery/gallery-12.jpg",
+    },
+    // {
+    //   id: 11,
+    //   image: "/img/gallery/gallery-13.jpg",
+    // },
   ]
-
-
 
   return (
     <section className="layout-pb-lg">
@@ -44,27 +66,27 @@ export default function Gallery() {
           </div>
         </div>
 
-          <Fancybox options={{
-            Carousel: {
-              infinite: true,
-            },
-          }} >
-            {
-              images.map((image) => (
-                <div className="w-1/5 md:w-1/2 sm:w-1/1" key={image.id}>
-                  <div data-anim-child="img-right cover-white delay-2" data-fancybox="gallery" href={image.image}>
-                    <a href="#" className="ratio ratio-1:1" >
-                      <img
-                        src={image.image}
-                        alt="image"
-                        className="img-ratio rounded-16"
-                      />
-                    </a>
-                  </div>
+        <Fancybox options={{
+          Carousel: {
+            infinite: true,
+          },
+        }} >
+          {
+            images.map((image) => (
+              <div className="w-1/5 md:w-1/2 sm:w-1/1" key={image.id}>
+                <div data-anim-child="img-right cover-white delay-2" data-fancybox="gallery" href={image.image}>
+                  <a href="#" className="ratio ratio-1:1" >
+                    <img
+                      src={image.image}
+                      alt="image"
+                      className="img-ratio rounded-16"
+                    />
+                  </a>
                 </div>
-              ))
-            }
-          </Fancybox>
+              </div>
+            ))
+          }
+        </Fancybox>
       </div>
     </section>
   )

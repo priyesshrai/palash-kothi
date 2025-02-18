@@ -2,6 +2,7 @@
 export default function Header() {
   return (
     <>
+    {/* This is the header component - Priyessh Rai */}
       <header
         className="header -h-110 -mx-60 -blur -border-bottom-3 js-header"
         data-add-bg="bg-light-1"
@@ -41,8 +42,8 @@ export default function Header() {
 
           <div className="header__center">
             <div className="header__logo">
-              {/* <img src="img/general/logo-header-2.svg" alt="logo" /> */}
-              <h1>Palash Kothi</h1>
+              <img src="/img/logo/palash_kothi.png" alt="logo" width="150px" />
+              {/* <h1>Palash Kothi</h1> */}
             </div>
           </div>
 
@@ -69,6 +70,7 @@ export default function Header() {
           <div className="">
             {/* <img src="img/general/logo-white.svg" alt="logo" /> */}
             <h1 style={{ color: "white" }}>Palash Kothi</h1>
+            {/* <img src="/img/logo/palash_kothi.png" alt="logo" width="120px" /> */}
           </div>
 
           {/* <button className="button text-white mr-30 lg:mr-0">

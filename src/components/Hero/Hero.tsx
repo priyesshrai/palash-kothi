@@ -1,8 +1,19 @@
+'use client'
 import React from 'react';
 import styles from './Hero.module.css'; // Ensure you have a CSS module for styling
 
 const Hero = () => {
+  const bannerImg = [
+    "/img/hero/banner-04.jpg",
+    "/img/hero/banner-06.jpg",
+    "/img/hero/banner-05.jpg",
+    "/img/hero/banner-07.jpg",
+    "/img/hero/banner-01.jpg",
+    "/img/hero/banner-02.jpg",
+    "/img/hero/banner-03.jpg",
+  ]
   return (
+    // This is the Hero component(First Component) - Priyessh Rai
     <div className={styles.hero}>
       {/* <div className={styles.heroContent}>
         <h1 className={styles.heroTitle}>Welcome to Palash Kothi</h1>
@@ -224,29 +235,18 @@ const Hero = () => {
                   data-pagination="js-slider1-pagination"
                 >
                   <div className="swiper-wrapper">
-                    <div className="swiper-slide">
-                      <img
-                        src="/img/hero/banner-01.jpg"
-                        alt="image"
-                        className="hero-slider__image rounded-16"
-                      />
-                    </div>
 
-                    <div className="swiper-slide">
-                      <img
-                        src="/img/hero/banner-02.jpg"
-                        alt="image"
-                        className="hero-slider__image rounded-16"
-                      />
-                    </div>
-
-                    <div className="swiper-slide">
-                      <img
-                        src="/img/hero/banner-03.jpg"
-                        alt="image"
-                        className="hero-slider__image rounded-16"
-                      />
-                    </div>
+                    {
+                      bannerImg.map((img, index) => (
+                        <div className="swiper-slide" key={index}>
+                          <img
+                            src={img}
+                            alt="image"
+                            className="hero-slider__image rounded-16"
+                          />
+                        </div>
+                      ))
+                    }
                   </div>
 
                   <div className="hero-slider__nav">

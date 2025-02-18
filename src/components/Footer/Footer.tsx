@@ -140,6 +140,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
+      {/* This is the Footer component - Priyessh Rai */}
     </footer>
   )
 }
