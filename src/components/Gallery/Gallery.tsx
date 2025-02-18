@@ -66,27 +66,21 @@ export default function Gallery() {
           </div>
         </div>
 
-        <Fancybox options={{
-          Carousel: {
-            infinite: true,
-          },
-        }} >
-          {
-            images.map((image) => (
-              <div className="w-1/5 md:w-1/2 sm:w-1/1" key={image.id}>
-                <div data-anim-child="img-right cover-white delay-2" data-fancybox="gallery" href={image.image}>
-                  <a href="#" className="ratio ratio-1:1" >
-                    <img
-                      src={image.image}
-                      alt="image"
-                      className="img-ratio rounded-16"
-                    />
-                  </a>
+        <Fancybox options={{ Carousel: { infinite: true } }}>
+          {images.map((image) => (
+            <div className="w-1/5 md:w-1/2 sm:w-1/1" key={image.id}>
+              <a
+                data-anim-child="img-right cover-white delay-2"
+                data-fancybox="gallery"
+                href={image.image}>
+                <div className="ratio ratio-1:1">
+                  <img src={image.image} alt="Gallery Image" className="img-ratio rounded-16" />
                 </div>
-              </div>
-            ))
-          }
+              </a>
+            </div>
+          ))}
         </Fancybox>
+
       </div>
     </section>
   )
