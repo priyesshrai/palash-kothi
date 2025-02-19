@@ -18,7 +18,7 @@ export default function Benefits() {
           </div>
         </div>
       </section>
-      <section className="layout-pt-lg" style={{ paddingTop: '100px' }}>
+      {/* <section className="layout-pt-lg" style={{ paddingTop: '100px' }}>
         <div className="container">
           <div data-anim-wrap className="row y-gap-30 items-center">
             <div data-anim-child="img-right cover-light-1 delay-2" className="col-md-6">
@@ -36,20 +36,20 @@ export default function Benefits() {
                 A host, of golden daffodils;
               </p>
 
-              {/* <div data-anim-child="slide-up delay-8">
+              <div data-anim-child="slide-up delay-8">
                 <div className="text-17 fw-500 mt-50 md:mt-30">Open Daily: 7:00 pm - 24:00</div>
               </div>
 
               <div data-anim-child="slide-up delay-8">
                 <button className="button -md -type-2 bg-accent-1 -white rounded-16 text-accent-2 mt-50 md:mt-30">DINING WITH US</button>
-              </div> */}
+              </div>
               <div data-anim-child="slide-up delay-8">
                 <button className="button -md -type-2 -outline-black text-black rounded-16 mt-50 md:mt-30">discover more</button>
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       <section className="layout-pt-lg">
         <div className="container">
@@ -77,7 +77,7 @@ export default function Benefits() {
         </div>
       </section>
 
-      <section className="layout-pt-lg layout-pb-lg">
+      {/* <section className="layout-pt-lg layout-pb-lg">
         <div className="container">
           <div data-anim-wrap className="row y-gap-30 items-center">
             <div data-anim-child="img-right cover-light-1 delay-2" className="col-md-6">
@@ -101,7 +101,7 @@ export default function Benefits() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </>
   )
 }

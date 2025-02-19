@@ -32,7 +32,7 @@ export default function RootLayout({
           <Cursor/>
           <Header />
           {children}
-          <Footer />
+          {/* <Footer /> */}
 
           <Script strategy="afterInteractive" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAAz77U5XQuEME6TpftaMdX0bBelQxXRlM"></Script>
           <Script strategy="afterInteractive" src="https://unpkg.com/@googlemaps/markerclusterer/dist/index.min.js"></Script>
